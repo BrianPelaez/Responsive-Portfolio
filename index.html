@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/skins/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="CSS/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="CSS/skins/color-2.css" class="alternate-style" title="color-2" enabled>
+    <link rel="stylesheet" href="CSS/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="CSS/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="CSS/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="CSS/style-switcher.css">
     <title>Portafolio</title>
 </head>
 <body>
@@ -17,17 +22,17 @@
         <!-- Aside Start -->
         <div class="aside">
             <div class="logo">
-                <a href="#"><span>A</span>tlas</a>
+                <a href="#"><span>M</span>enu</a>
             </div>
             <div class="nav-toggler">
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-user"></i> About</a></li>
-                <li><a href="#"><i class="fa-solid fa-list"></i> Services</a></li>
-                <li><a href="#"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#"><i class="fa-solid fa-comments"></i> Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#sobre"><i class="fa-solid fa-user"></i> Sobre mi</a></li>
+                <li><a href="#servicios"><i class="fa-solid fa-list"></i> Servicios</a></li>
+                <li><a href="#portafolio"><i class="fa-solid fa-briefcase"></i> Portafolio</a></li>
+                <li><a href="#contacto"><i class="fa-solid fa-comments"></i> Contacto</a></li>
             </ul>
         </div>
 
@@ -35,7 +40,7 @@
         <!-- Main Content Start-->
         <div class="main-content">
             <!-- Home Section Start -->
-            <section class="home section">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -57,7 +62,7 @@
             </section>
             <!-- Home Section End -->
             <!-- About Section Start -->
-            <section class="about section">
+            <section class="about section" id="sobre">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -77,22 +82,22 @@
                                 <div class="personal-info padd-15">
                                     <div class="row">
                                         <div class="info-item padd-15">
-                                            <p>Nacimiento : <span>17 sep 1993</span></p>
+                                            <p>Nacimiento : <span>17 SEP 1993</span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Edad : <span>28</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Website : <span>www.domain.com</span></p>
+                                            <p>GitHub : <span>github.com/BrianPelaez</span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Mail : <span>pelaez_brian@hotmail.com</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Telefono : <span>+54 011 6462-9763</span></p>
+                                            <p>Teléfono : <span>+54 011 6462-9763</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Ciudad : <span>Argentina</span></p>
+                                            <p>Ciudad : <span>Argentina, CABA</span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Freelance : <span>Disponible</span></p>
@@ -149,7 +154,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2013 - 2015
                                                     </h3>
-                                                    <h4 class="timeline-title">Master  in Computer Science</h4>
+                                                    <h4 class="timeline-title">FullStack Developer con Java y Angular</h4>
                                                     <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis voluptatibus dignissimos quidem. Similique hic minima explicabo, quia debitis at nisi tempora molestiae magnam obcaecati?</p>
                                                 </div>
                                                 <!-- TimeLine Item -->
@@ -159,7 +164,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2013 - 2015
                                                     </h3>
-                                                    <h4 class="timeline-title">Master  in Computer Science</h4>
+                                                    <h4 class="timeline-title">Desarrollador con Android Studio</h4>
                                                     <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis voluptatibus dignissimos quidem. Similique hic minima explicabo, quia debitis at nisi tempora molestiae magnam obcaecati?</p>
                                                 </div>
                                                 <!-- TimeLine Item -->
@@ -169,7 +174,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2013 - 2015
                                                     </h3>
-                                                    <h4 class="timeline-title">Master  in Computer Science</h4>
+                                                    <h4 class="timeline-title">#YoProgramo</h4>
                                                     <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis voluptatibus dignissimos quidem. Similique hic minima explicabo, quia debitis at nisi tempora molestiae magnam obcaecati?</p>
                                                 </div>
                                                 <!-- TimeLine Item -->
@@ -188,7 +193,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2013 - 2015
                                                     </h3>
-                                                    <h4 class="timeline-title">Master  in Computer Science</h4>
+                                                    <h4 class="timeline-title">Sistemas y procesos en Fleni</h4>
                                                     <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis voluptatibus dignissimos quidem. Similique hic minima explicabo, quia debitis at nisi tempora molestiae magnam obcaecati?</p>
                                                 </div>
                                                 <!-- TimeLine Item -->
@@ -198,7 +203,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2013 - 2015
                                                     </h3>
-                                                    <h4 class="timeline-title">Master  in Computer Science</h4>
+                                                    <h4 class="timeline-title">Sistemas y procesos en Fleni</h4>
                                                     <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis voluptatibus dignissimos quidem. Similique hic minima explicabo, quia debitis at nisi tempora molestiae magnam obcaecati?</p>
                                                 </div>
                                                 <!-- TimeLine Item -->
@@ -208,7 +213,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2013 - 2015
                                                     </h3>
-                                                    <h4 class="timeline-title">Master  in Computer Science</h4>
+                                                    <h4 class="timeline-title">Sistemas y procesos en Fleni</h4>
                                                     <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis voluptatibus dignissimos quidem. Similique hic minima explicabo, quia debitis at nisi tempora molestiae magnam obcaecati?</p>
                                                 </div>
                                                 <!-- TimeLine Item -->
@@ -223,7 +228,7 @@
             </section>
             <!-- About Section End -->
             <!-- Servicios Section Start -->
-            <section class="service section">
+            <section class="service section" id="servicios">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -303,7 +308,7 @@
             <!-- Servicios Section End -->
 
             <!-- Portafolio Section Start -->
-            <section class="portafolio section">
+            <section class="portafolio section" id="portafolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -312,7 +317,7 @@
                     </div>
                     <div class="row">
                         <div class="portafolio-heading padd-15">
-                            <h2>Mis ultimos proyectos :</h2>
+                            <h2>Mis últimos proyectos :</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -320,7 +325,7 @@
                         <div class="portafolio-item padd-15">
                             <div class="portafolio-item-inner shadow-dark">
                                 <div class="portafolio-img">
-                                    <img src="./img/portafolio/To-do-List.jpg" alt="">
+                                   <img src="./img/portafolio/mascotas.jpg" alt="Mascotas"></a>
                                 </div>
                             </div>
                         </div>
@@ -376,7 +381,7 @@
             <!-- Portafolio Section End -->
 
             <!-- Portafolio Contact Start -->
-            <section class="contacto section">
+            <section class="contacto section" id="contacto">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -388,16 +393,16 @@
                     <div class="row">
                         <!-- Contacto info item Start-->
                         <div class="contacto-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Llamame!</h4>
+                            <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <h4>Whatsapp</h4>
                             <p>+54 011 6462-9763</p>
                         </div>
                         <!-- Contacto info item End-->
                         <!-- Contacto info item Start-->
                         <div class="contacto-info-item padd-15">
                             <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>Oficina</h4>
-                            <p>Argentina</p>
+                            <h4>Ciudad</h4>
+                            <p>CABA - BS. AS.</p>
                         </div>
                         <!-- Contacto info item End-->
                         <!-- Contacto info item Start-->
@@ -409,9 +414,9 @@
                         <!-- Contacto info item End-->
                         <!-- Contacto info item Start-->
                         <div class="contacto-info-item padd-15">
-                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                            <h4>Website</h4>
-                            <p>www.domain.com.ar</p>
+                            <div class="icon"><i class="fa-brands fa-github"></i></div>
+                            <h4>Github</h4>
+                            <p>github.com/BrianPelaez</p>
                         </div>
                         <!-- Contacto info item End-->
                     </div>
@@ -460,7 +465,28 @@
         <!-- Main Content End-->
     </div>
     <!-- Main Container End -->
+    <!-- Style Switcher Start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- SStyle Switcher End -->
+    
     <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./JS/script.js"></script>
+    <script src="./JS/style-switcher.js"></script>
 </body>
 </html>
