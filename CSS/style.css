@@ -460,5 +460,217 @@ h3.my-profession{
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
+}
+/* Service */
+.service .container {
+    padding-bottom: 40px;
+}
+.service .service-item
+{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.service .service-item .service-item-inner {
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.service .service-item .service-item-inner:hover{
+    box-shadow: 0 0 20px rgb(48, 46, 77 , 0.15);
+}
+.service .service-item .service-item-inner .icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.service .service-item .service-item-inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+.service .service-item .service-item-inner:hover .icon {
+    background-color: red;
+}
+.service .service-item .service-item-inner:hover .icon .fa {
+    font-size: 25px;
+    color:#FFF;
+}
+.service .service-item .service-item-inner h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.service .service-item .service-item-inner p {
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+/* Portafolio*/
+.portafolio .container{
+    padding-bottom: 40px;
+}
+.portafolio .portafolio-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.portafolio .portafolio-heading h2 {
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+.portafolio .portafolio-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.portafolio .portafolio-item-inner {
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portafolio .portafolio-item-inner .portafolio-img img {
+    width: 100%;
+    display: block;
+}
+/* Contacto */
+.contacto-title {
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contacto-sub-title {
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.contacto .contacto-info-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contacto .contacto-info-item .icon {
+    display: inline-block;
+}
+.contacto .contacto-info-item .icon .fa {
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.contacto .contacto-info-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.contacto .contacto-info-item p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+}
+.contacto .contacto-form {
+    flex: 0 0 100%;
+    max-width: 100%;
 
+}
+.contacto .contacto-form .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contacto .contacto-form .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contacto .contacto-form .form-item {
+    margin-bottom: 30px;
+}
+.contacto .contacto-form .form-item .form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+.contacto .contacto-form .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgb(48, 46, 77 , 0.15);
+}
+.contacto .contacto-form .form-item textarea.form-control {
+    height: 140px;
+}
+.contacto .contacto-form .btn {
+    height: 50px;
+    padding: 0 50px;
+}
+@media (max-width:1199px) {
+    .aside{
+        left: -270px;
+    }
+    .main-content{
+        padding-left:0 ;
+    }
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+    }
+}
+@media (max-width:991px) {
+
+    .contacto .contacto-info-item,
+    .portafolio  .portafolio-item,
+    .service .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img {
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .contacto .contacto-form .col-6,
+    .contacto .contacto-info-item,
+    .portafolio .portafolio-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width:500px) {
+    
+    .about .about-content .personal-info .info-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
