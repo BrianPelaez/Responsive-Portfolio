@@ -12,13 +12,14 @@ window.addEventListener("scroll", () => {
 
 /* Activar Style de color */
 const alternateStyle = document.querySelectorAll(".alternate-style");
+console.log(alternateStyle[0])
 function setActiveStyle(color){
-    localStorage.setItem("color", color);
+    localStorage.setItem("color", color); // color: color-1
     changeColor();
 }
 function changeColor(){
     alternateStyle.forEach((style) => {
-        console.log(style)
+        //console.log(style)
         if (localStorage.getItem("color") === style.getAttribute("title")){
             style.removeAttribute("disabled");
         } else {
@@ -40,3 +41,7 @@ window.addEventListener("load", () => {
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
+
+window.onload = function(){
+    alternateStyle[0].removeAttribute("disabled");
+}
