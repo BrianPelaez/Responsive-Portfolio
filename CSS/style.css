@@ -411,6 +411,7 @@ h3.my-profession{
 .about .about-content .timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
+    
 }
 .about .about-content .timeline {
     background-color: var(--bg-black-100);
@@ -419,6 +420,7 @@ h3.my-profession{
     border-radius: 10px;
     width: 100%;
     position: relative;
+    min-height: 620px;
 }
 .about .about-content .timeline .timeline-item {
     position: relative;
@@ -451,6 +453,7 @@ h3.my-profession{
     font-size: 14px;
     margin-bottom: 12px;
     color: var(--text-black-700);
+    text-align: center;
 }
 .about .about-content .timeline .timeline-date .fa {
     margin-right: 5px;
@@ -461,12 +464,14 @@ h3.my-profession{
     margin-bottom: 15px;
     text-transform: capitalize;
     color: var(--text-black-900);
+    text-align: center;
 }
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
+    text-align: center;
 }
 /* Service */
 .service .container {
@@ -550,6 +555,9 @@ h3.my-profession{
 .portafolio .portafolio-item-inner .portafolio-img img {
     width: 100%;
     display: block;
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: cover;
 }
 /* Contacto */
 .contacto-title {
