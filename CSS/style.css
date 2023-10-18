@@ -691,5 +691,7 @@ h3.my-profession{
         display: flex;
         justify-content: center;
         align-items: center;
+        width: auto;
+        margin-left: -15px;
     }
 }
